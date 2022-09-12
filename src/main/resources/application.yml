@@ -1,0 +1,21 @@
+server:
+  port: '8080'
+
+spring:
+#  datasource:
+#    username: root
+#    url: jdbc:mysql://localhost:3307/imcApi
+#    password: root
+  datasource:
+    url: jdbc:h2:file:~/guessing-game
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
+
+  jpa:
+    properties:
+      hibernate:
+        format_sql: 'true'
+        show_sql: 'true'
+    hibernate:
+      ddl-auto: update
